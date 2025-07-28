@@ -1,4 +1,4 @@
-extends Node3D
+extends StaticBody3D
 class_name Chunk
 
 const CHUNK_WIDTH = 16
@@ -149,3 +149,7 @@ func draw():
 	var mesh_instance = MeshInstance3D.new()
 	mesh_instance.mesh = mesh
 	add_child(mesh_instance)
+
+	var collision_shape = CollisionShape3D.new()
+	collision_shape.shape = mesh.create_trimesh_shape()
+	add_child(collision_shape)
