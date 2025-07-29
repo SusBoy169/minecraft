@@ -1,9 +1,0 @@
-[gd_resource type="Resource" script_class="Block" load_steps=2 format=3]
-
-[ext_resource type="Script" path="res://scripts/block.gd" id="1_w6f8w"]
-
-[resource]
-script = ExtResource("1_w6f8w")
-name = "Bedrock"
-solid = true
-texture_id = 8
